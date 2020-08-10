@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeValidate | Task 2</title>
-   
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>WeValidate</h1>
     </header>
-    <section class="banner">
-        <img src="" alt="main background image">
-        <div class="description">
-            <h2>This is an app that <br><span>Validates the User' Information</span></h2>
-        </div>
-    </section>
-    <form action="/" id="myForm" name="myForm">
+    <h2>This app validates User Information</h2><br>
+    <div class="container">
+    <form action="/" id="myform" name="myform" onsubmit="return validateform()">
          <div class="general">
              <label for="name">Full name: </label>
              <input type="text" id="name" name="name">
@@ -28,12 +24,23 @@
              <input type="password" id="password" name="password">
              <br><br>
              <label for="tel">Phone Number: </label>
-             <input type="num" id="tel" name="tel" maxlength="15" pattern="[+][0-9]{14}">
+             <input type="num" id="tel" name="tel" maxlength="15">
+             <!--pattern="[+][0-9]{14}"-->
              <br><br>
-             <input type="submit" value="Submit this form" id="submit-btn">
+             <input type="submit" value="Submit" id="btn">
          </div>
-
     </form>
+    </div>
+    <section class="join">
+        <h2>Subscribe for more!</h2><br>
+        <p>Thank you for using the app. You can subscribe to get updates when an app is released. We can also register you for comments. Kindly enter your email if you're interested.</p>
+        <form class="newsletter">
+            <input type="email" name="email" placeholder="Enter email and hit enter" required>
+        </form>
+    </section>
+    <footer>
+        <p class="copyright"> Copyright 2020 Peterock</p>
+    </footer>
     <!--Main Javascript-->
     <script src="./main.js"></script>
 </body>
