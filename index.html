@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeValidate | Task 2</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <!--AOS CSS-->
+	<link href="./assets/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>WeValidate</h1>
+        <h1 data-aos="flip-up">WeValidate</h1>
     </header>
     <h2>This app validates User Information</h2><br>
-    <div class="container">
+    <div class="container" data-aos="zoom out" data-aos-delay="500">
     <form action="/" id="myform" name="myform" onsubmit="return validateform()">
          <div class="general">
              <label for="name">Full name: </label>
@@ -42,6 +44,13 @@
         <p class="copyright"> Copyright 2020 Peterock</p>
     </footer>
     <!--Main Javascript-->
-    <script src="./main.js"></script>
+    <script src="./assets/main.js"></script>
+    <!--AOS JS CDN-->
+	<script src="./assets/aos.js"></script>
+
+	<!--AOS-->
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
