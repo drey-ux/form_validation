@@ -18,17 +18,21 @@
          <div class="general">
              <label for="name">Full name: </label>
              <input type="text" id="name" name="name">
-             <br><br>
+             <span class="error"><p id="name_error"></p></span>
+             <br>
              <label for="email">Email Address: </label>
              <input type="email" id="email" name="email">
-             <br><br>
+             <span class="error"><p id="email_error"></p></span>
+             <br>
              <label for="password">Password: </label>
              <input type="password" id="password" name="password">
-             <br><br>
+             <span class="error"><p id="password_error"></p></span>
+             <br>
              <label for="tel">Phone Number: </label>
              <input type="num" id="tel" name="tel" maxlength="15">
+             <span class="error"><p id="phone_error"></p></span>
              <!--pattern="[+][0-9]{14}"-->
-             <br><br>
+             <br>
              <input type="submit" value="Submit" id="btn">
          </div>
     </form>
